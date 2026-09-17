@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.first-image, .second-image {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.first-image {
+  background-image: url("https://csirsu.com/wp-content/uploads/2021/04/Attack-on-titan_12.jpeg");
+}
+
+.second-image {
+  background-image: url("https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/key-art/Homepage_Discover-our-games_MC-Vanilla-KeyArt_864x864.jpg");
+}
+
+h3 {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.content {
+  padding: 100px 20px;
+  text-align: center;
+  background-color: #111;
+  font-size: 1.5rem;
+}
