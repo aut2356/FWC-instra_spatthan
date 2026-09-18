@@ -5,19 +5,18 @@
         }
 
         body {
-            /* ใช้ฟอนต์พื้นฐานที่มีในทุกเครื่อง */
             font-family: Arial, Helvetica, sans-serif;
             background-color: #f4f7f6;
             color: #333;
             line-height: 1.6;
-            /* ทำให้การเลื่อนหน้าเว็บเวลาคลิกเมนูลื่นไหลขึ้น */
+
             scroll-behavior: smooth; 
         }
 
         .navbar {
             background-color: #2c3e50;
             color: white;
-            position: fixed; /* ทำให้แถบติดอยู่ด้านบนเสมอ */
+            position: fixed;
             top: 0;
             width: 100%;
             height: 60px;
@@ -39,9 +38,9 @@
             color: #1abc9c;
         }
 
-        /* เมนูย่อยในหน้า Resume */
+
         .nav-links {
-            display: none; /* ซ่อนไว้ก่อน จะแสดงด้วย JS เฉพาะตอนอยู่หน้า Resume */
+            display: none; 
             list-style: none;
             gap: 15px;
         }
@@ -59,12 +58,11 @@
         }
 
         .main-content {
-            /* เว้นที่ด้านบนไม่ให้โดน Navbar บัง */
+
             padding-top: 60px; 
             min-height: 100vh;
         }
 
-        /* กล่องคอนเทนเนอร์ตรงกลาง */
         .container {
             max-width: 900px;
             margin: 0 auto;
@@ -80,7 +78,7 @@
             justify-content: center;
             gap: 30px;
             margin-top: 40px;
-            flex-wrap: wrap; /* ทำให้ปัดลงล่างถ้าจอแคบ */
+            flex-wrap: wrap; 
         }
 
         .card {
@@ -116,11 +114,10 @@
         }
 
         .resume-page {
-            display: none; /* ซ่อนไว้ก่อน JS จะเป็นตัวสั่งเปิด */
+            display: none; 
         }
 
         .resume-section {
-            /* ชดเชยพื้นที่ด้านบนเวลาคลิกลิงก์ (Anchor) ไม่ให้ Navbar บังเนื้อหา */
             scroll-margin-top: 70px;
             padding: 40px 20px;
             border-bottom: 1px solid #ddd;
@@ -128,9 +125,9 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
         }
 
-        /* ส่วนที่ 1: Profile */
         .profile-pic {
             width: 150px;
             height: 150px;
@@ -140,7 +137,6 @@
             margin-bottom: 20px;
         }
 
-        /* ส่วนที่ 2: Experience & Skills */
         .flex-row {
             display: flex;
             gap: 20px;
@@ -159,8 +155,6 @@
             padding-left: 20px;
             margin-top: 10px;
         }
-
-        /* ส่วนที่ 3: Contact */
         .contact-links a {
             display: inline-block;
             margin: 10px;
@@ -175,7 +169,7 @@
 
         @media screen and (max-width: 600px) {
             .flex-row {
-                flex-direction: column; /* ถ้าจอมือถือให้แสดงเรียงลงมา */
+                flex-direction: column; 
             }
             .cards-container {
                 flex-direction: column;
@@ -190,6 +184,7 @@
                 margin-top: 10px;
             }
             .main-content {
-                padding-top: 90px; /* เพิ่มพื้นที่ชดเชยเพราะ navbar สูงขึ้นในมือถือ */
+                padding-top: 90px;
             }
+
         }
